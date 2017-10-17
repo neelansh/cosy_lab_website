@@ -1,0 +1,111 @@
+{% assign is_post = page.date %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta content='{{ page.title }} - {{ site.title }}' name='title' />
+  <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
+  <title>{{ page.title }} - {{ site.title }}</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    body {
+      padding-top: 54px;
+    }
+
+    @media (min-width: 992px) {
+      body {
+        padding-top: 56px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="/static/images/cosylab-logo.png" width="30" height="30" alt=""> -->
+        Cosylab
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- Footer -->
+  <footer class="primary-footer">
+  <div class="copyright-wrap">
+    <div class="panel">
+      <div class="content">
+        <p><img alt="" src="/static/images/iiitd.png"></p>
+        <p><a href="https://iiitd.ac.in/" target="_blank"><strong>Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)</strong></a> | <a       href="http://faculty.iiitd.ac.in/~bagler/" target="_blank">Dr. Ganesh Bagler</a></p>
+        <P><a target="_blank" href="https://www.facebook.com/ganesh.bagler"><img src="/static/images/facebook.png" alt="facebook" /></a>
+          <a target="_blank" href="https://twitter.com/gansbags"><img src="/static/images/twwtter.png" alt="tiwwter" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/ganeshbagler"><img src="/static/images/linkedin.png" alt="linkedin'" /></a>
+        </P>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<style type="text/css">
+  .primary-footer{margin-top:10px;}
+  .footer-wrap{ background:#1a202c;padding-top:50px; margin-top:50px; padding-bottom:50px;}
+  .footer .panel{float:left; background:none; width:300px;}
+  .footer .panel .title h1{ color:#ffffff;}
+  .footer .panel .content{padding-top:25px;}
+  .footer .panel .content p{ color:#435059;}
+  .footer .panel .content .button a{ margin-top:30px; background:#d13f31;}
+  .footer .panel .content .button a:hover{ margin-top:30px; background:#1f7872;}
+  .footer .panel .content ul li{ list-style:url(static/images/arrow.png) inside;}
+  .footer .panel .content ul li a{text-decoration:none; color:#435059;}
+  .footer .panel .content ul li a:hover{color:#d13f31;}
+  .copyright-wrap{ background:#1f7872; overflow:hidden; padding:40px 0px 40px 0px;}
+  .copyright-wrap .panel{margin:0 auto; background:none;}
+  .copyright-wrap .panel .content p{ color:#ffffff; text-align:center; font-size:12px;}
+  .copyright-wrap .panel .content p a{ text-decoration:none; color:#ffffff;}
+  .copyright-wrap .panel .content p a:hover{ color:#1a202c;}
+</style>
+
+
+</body>
+
+</html>
