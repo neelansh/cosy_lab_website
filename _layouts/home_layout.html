@@ -100,6 +100,10 @@
         {% if page.date %}
         <h6 class="card-subtitle mb-2 text-muted">{{ page.date | date_to_string }}</h6>
         {% endif %}
+        <br>
+        {% if page.author %}
+        <h6 class="card-subtitle mb-2 text-muted">By {{ page.author }}</h6>
+        {% endif %}
         <p>
           {{content}}
         </p>
