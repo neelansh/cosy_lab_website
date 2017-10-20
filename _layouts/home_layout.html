@@ -11,57 +11,76 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="{{ page.keywords }}">
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/popper/popper.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
   <style type="text/css">
-    body {
-      padding-top: 54px;
-    }
+  body {
+    padding-top: 54px;
+    background-color: #f3f3f3;
+  }
 
-    @media (min-width: 992px) {
-      body {
-        padding-top: 56px;
-      }
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
     }
-  </style>
+  }
+</style>
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+  <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <!-- <img src="/static/images/cosylab-logo.png" width="30" height="30" alt=""> -->
-        Cosylab
+      <a class="navbar-brand" href="/">
+        <img style="position: absolute; top: 0.5em; " src="/static/images/cosylab-logo.png" width="60" height="60" alt="">
+        <!-- Cosylab -->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Research
             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/pages/research/disease">Disease Modelling</a>
+              <a class="dropdown-item" href="#">Structural Bioinformatics</a>
+              <a class="dropdown-item" href="#">Complex Networks</a>
+              <a class="dropdown-item" href="#">Brain Modelling</a>
+              <a class="dropdown-item" href="/pages/research/biomed">Biomedical Data Mining</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="http://cosylab.iiitd.edu.in/flavordb">FlavorDB</a>
+              <a class="dropdown-item" href="http://faculty.iiitd.ac.in/~bagler/webservers/SerpentinaDB/">SerpentinaDB</a>
+              <a class="dropdown-item" href="http://faculty.iiitd.ac.in/~bagler/webservers/Phytochemica/index.php">Phytochemica</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/pages/people">People</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="/pages/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -72,21 +91,21 @@
 
   <!-- Footer -->
   <footer class="primary-footer">
-  <div class="copyright-wrap">
-    <div class="panel">
-      <div class="content">
-        <p><img alt="" src="/static/images/iiitd.png"></p>
-        <p><a href="https://iiitd.ac.in/" target="_blank"><strong>Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)</strong></a> | <a       href="http://faculty.iiitd.ac.in/~bagler/" target="_blank">Dr. Ganesh Bagler</a></p>
-        <P><a target="_blank" href="https://www.facebook.com/ganesh.bagler"><img src="/static/images/facebook.png" alt="facebook" /></a>
-          <a target="_blank" href="https://twitter.com/gansbags"><img src="/static/images/twwtter.png" alt="tiwwter" /></a>
-          <a target="_blank" href="https://www.linkedin.com/in/ganeshbagler"><img src="/static/images/linkedin.png" alt="linkedin'" /></a>
-        </P>
+    <div class="copyright-wrap">
+      <div class="panel">
+        <div class="content">
+          <p><img alt="" src="/static/images/iiitd.png"></p>
+          <p><a href="https://iiitd.ac.in/" target="_blank"><strong>Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)</strong></a> | <a       href="http://faculty.iiitd.ac.in/~bagler/" target="_blank">Dr. Ganesh Bagler</a></p>
+          <P><a target="_blank" href="https://www.facebook.com/ganesh.bagler"><img src="/static/images/facebook.png" alt="facebook" /></a>
+            <a target="_blank" href="https://twitter.com/gansbags"><img src="/static/images/twwtter.png" alt="tiwwter" /></a>
+            <a target="_blank" href="https://www.linkedin.com/in/ganeshbagler"><img src="/static/images/linkedin.png" alt="linkedin'" /></a>
+          </P>
 
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<style type="text/css">
+  </footer>
+  <style type="text/css">
   .primary-footer{margin-top:10px;}
   .footer-wrap{ background:#1a202c;padding-top:50px; margin-top:50px; padding-bottom:50px;}
   .footer .panel{float:left; background:none; width:300px;}
