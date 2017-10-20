@@ -87,7 +87,33 @@
     </div>
   </nav>
 
+  {% if is_post %}
+
+  <div class="container" style="max-width: 70%; padding: 1em;">
+    
+    <div class="card">
+
+      <div class="card-body">
+        <h4 class="card-title">
+          <strong>{{page.title}}</strong>
+        </h4>
+        {% if page.date %}
+        <h6 class="card-subtitle mb-2 text-muted">{{ page.date | date_to_string }}</h6>
+        {% endif %}
+        <p>
+          {{content}}
+        </p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  {% else %}
+
   {{ content }}
+
+  {% endif %}
 
   <!-- Footer -->
   <footer class="primary-footer">
